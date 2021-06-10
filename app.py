@@ -38,3 +38,6 @@ def handle_message(event):
     # Send To Line
     reply = TextSendMessage(text=f"{get_message+str('_安安')}")
     line_bot_api.reply_message(event.reply_token, reply)
+    reply = TextSendMessage(text=f"{str('12356789~~沒4啦')}")
+    line_bot_api.reply_message(event.reply_token, reply)    
+    
