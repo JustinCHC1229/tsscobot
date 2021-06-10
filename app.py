@@ -36,5 +36,5 @@ def handle_message(event):
     get_message = event.message.text
 
     # Send To Line
-    reply = TextSendMessage(text=f"{get_message}")
-    line_bot_api.reply_message(event.reply_token, reply+str('_安安'))
+    reply = TextSendMessage(text=f"{get_message+str('_安安')}")
+    line_bot_api.reply_message(event.reply_token, reply)
